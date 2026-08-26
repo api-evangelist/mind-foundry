@@ -64,5 +64,21 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Mind Foundry is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Mind Foundry is an Oxford University spin-out, founded in 2016 and headquartered at Ewert House in
+Oxford, United Kingdom, that builds applied machine learning for high-stakes, real-world problems
+across defence, national security, insurance, infrastructure and government. Its current products are
+SENTRY (multi-modal sensor fusion) and NIGHTINGALE (AI-enabled acoustic intelligence for
+anti-submarine warfare, integrated with Thales systems).
+
+**Mind Foundry publishes no public API.** There is no developer portal, API reference, OpenAPI /
+AsyncAPI / GraphQL specification, MCP server, A2A agent card or `/.well-known` document on any host
+it controls. The one public API it ever shipped — OPTaaS, a Bayesian optimisation web service — has
+been retired without a published notice: `optaas.mindfoundry.ai` and `demo.optimize.mindfoundry.ai`
+no longer resolve, `https://mindfoundry.ai/optaas` returns 404, and the `MindFoundry` GitHub
+organisation now reports zero public repositories. Its first-party Python client
+(`mindfoundry-optaas-client`, last released 2024-01-26) is still installable from PyPI but cannot
+reach a live server.
+
+- https://www.mindfoundry.ai/
+- https://github.com/MindFoundry
+- https://pypi.org/project/mindfoundry-optaas-client/

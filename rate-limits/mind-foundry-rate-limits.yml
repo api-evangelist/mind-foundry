@@ -1,0 +1,21 @@
+generated: '2026-08-25'
+method: searched
+source: https://www.mindfoundry.ai/sitemap.xml
+note: >-
+  No rate limits are documented because no public API is documented. Mind Foundry publishes no
+  developer portal, API reference or machine-readable specification (see x-coverage in apis.yml),
+  so there is no published quota, window, burst allowance, 429 behaviour or RateLimit-* response
+  header to record. The only API the company ever shipped publicly, OPTaaS, is retired and its
+  hosts no longer resolve, so no live response could be observed either. limit_count is an
+  honest zero, not an unchecked field.
+rate_limits: []
+limit_count: 0
+headers: []
+exhaustion_status_code: null
+evidence:
+- url: https://www.mindfoundry.ai/sitemap.xml
+  status: 200
+  detail: 139 URLs, none developer- or API-facing
+- url: https://optaas.mindfoundry.ai/
+  status: 0
+  detail: DNS NXDOMAIN — retired OPTaaS host, no live response to observe headers on

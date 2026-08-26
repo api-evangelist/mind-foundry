@@ -1,0 +1,21 @@
+generated: '2026-08-25'
+method: searched
+source: https://www.mindfoundry.ai/sitemap.xml ; https://www.mindfoundry.ai/contactus
+note: >-
+  Mind Foundry publishes no pricing, plans or packaging of any kind. Its full sitemap (139 URLs,
+  fetched 2026-08-25) contains no /pricing, /plans, /packages or equivalent page, and the only
+  commercial route on the site is a contact form at /contactus (plus a defence-specific form at
+  /contact-us/defence). Engagements are enterprise/programme sales into defence, national
+  security and insurance; there is nothing self-serve to price. plan_count is an honest zero.
+pricing_page: null
+signup: null
+sales_contact: https://www.mindfoundry.ai/contactus
+model: enterprise-contact-only
+plans: []
+plan_count: 0
+evidence:
+- url: https://www.mindfoundry.ai/contactus
+  status: 200
+- url: https://www.mindfoundry.ai/sitemap.xml
+  status: 200
+  detail: 139 URLs, no pricing or plans page

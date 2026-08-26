@@ -1,0 +1,68 @@
+generated: '2026-08-25'
+method: searched
+source: https://www.mindfoundry.ai/ (site-wide footer certification badge row), https://www.mindfoundry.ai/about-us
+note: >-
+  Mind Foundry publishes no machine-readable contract, so there is nothing to derive
+  technical conformance from. What it does publish is a set of organisational
+  certification claims, rendered as badge images in the site footer. They are recorded
+  here as claims with the page they appear on; no certificate number, issuing body,
+  scope statement, audit date or trust centre is published anywhere on the site, so
+  none of these could be verified against a registry.
+standards:
+- id: iso-27001
+  name: ISO/IEC 27001 Information Security Management
+  conforms: true
+  evidence:
+    type: certification-badge
+    url: https://www.mindfoundry.ai/
+    detail: >-
+      Footer badge <img alt="ISO27001"
+      src=".../hubfs/Logos/ISO27001%20RGB%20Purple.png"> on every page of www.mindfoundry.ai.
+    verified_against_registry: false
+- id: cyber-essentials-plus
+  name: NCSC Cyber Essentials Plus
+  conforms: true
+  evidence:
+    type: certification-badge
+    url: https://www.mindfoundry.ai/
+    detail: >-
+      Footer badge "Cyber Essentials Plus Logo"
+      (.../hubfs/Logos/Cyber%20Essentials%20Plus%20Logo.png) on www.mindfoundry.ai.
+    verified_against_registry: false
+- id: joscar
+  name: JOSCAR (Joint Supply Chain Accreditation Register) — UK aerospace, defence and security supplier accreditation
+  conforms: true
+  evidence:
+    type: accreditation-badge
+    url: https://www.mindfoundry.ai/about-us
+    detail: >-
+      "JOSCAR registered" badge (.../hubfs/Logos/JOSCAR%20registered%20-%20full%20colour%20-%20PNG.png)
+      appears on the homepage and the about-us page.
+    verified_against_registry: false
+- id: oauth2
+  conforms: false
+  evidence: No OAuth surface. /.well-known/oauth-authorization-server 404 on www.mindfoundry.ai.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration 404 on www.mindfoundry.ai.
+- id: rfc9457
+  conforms: false
+  evidence: No published API contract or error reference to assert a problem-details format against.
+- id: rfc9116
+  conforms: false
+  evidence: /.well-known/security.txt 404 on www.mindfoundry.ai.
+domain_standards:
+  checked: true
+  found: []
+  note: >-
+    Mind Foundry's markets are defence/national security (SENTRY sensor fusion, NIGHTINGALE
+    acoustic intelligence) and insurance. Domain interchange standards do exist in that space
+    (NATO STANAG/AEP families, MISP/STIX for threat sharing, ACORD for insurance), but Mind
+    Foundry publishes no contract, message shape or topic namespace that declares any of them.
+    domain_standard_conformance is reward-only, so nothing is asserted here rather than
+    inventing a conformance to fill the slot.
+summary:
+  standards_checked: 7
+  conforms_count: 3
+  certifications_published: 3
+  machine_verifiable: 0

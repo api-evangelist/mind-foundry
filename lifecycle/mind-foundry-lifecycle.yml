@@ -1,0 +1,83 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  https://www.mindfoundry.ai/sitemap.xml ; DNS + HTTPS probes of the OPTaaS hosts and GitHub
+  repositories named in Mind Foundry's own package metadata and documentation
+note: >-
+  Mind Foundry publishes no versioning policy, no deprecation policy, no Sunset/Deprecation
+  header guidance, no SLA and no status page. This file records the one lifecycle fact that
+  IS measurable from the provider's own public surface: the OPTaaS API — the only public API
+  Mind Foundry ever shipped — has been retired without any published notice, and the retirement
+  is only observable by probing hosts that no longer resolve.
+versioning:
+  policy_published: false
+  scheme: null
+  evidence: No versioning page in https://www.mindfoundry.ai/sitemap.xml (139 URLs, none developer-facing).
+deprecation:
+  policy_published: false
+  sunset_header: unknown
+  deprecation_header: unknown
+  evidence: >-
+    No deprecation or sunset policy is published, and no API remains reachable to observe
+    RFC 8594 headers on.
+sla:
+  published: false
+status_page:
+  published: false
+  evidence: status.mindfoundry.ai resolves NXDOMAIN; no status link in the site footer or sitemap.
+retired_surfaces:
+- name: OPTaaS (Optimization as a Service)
+  description: >-
+    General-purpose Bayesian optimisation delivered as a web service, with first-party Python
+    and R clients. Mind Foundry's only public developer API.
+  status: retired
+  retired_notice_published: false
+  evidence:
+  - url: https://optaas.mindfoundry.ai/
+    result: DNS NXDOMAIN (curl exit, http_status 000)
+    checked: '2026-08-25'
+  - url: https://demo.optimize.mindfoundry.ai/static/client_docs/index.html
+    result: DNS NXDOMAIN (curl exit, http_status 000) — this was the published client documentation URL
+    checked: '2026-08-25'
+  - url: https://mindfoundry.ai/optaas
+    result: 404 (the Homepage URL declared in the package's own PyPI metadata)
+    checked: '2026-08-25'
+  - url: https://www.mindfoundry.ai/optaas
+    result: 200 after redirect to https://www.mindfoundry.ai/ — soft-404, the product page is gone
+    checked: '2026-08-25'
+  - url: https://github.com/MindFoundry/optaas-python-client
+    result: 404
+    checked: '2026-08-25'
+  - url: https://github.com/MindFoundry/optaas-r-client
+    result: 404
+    checked: '2026-08-25'
+  - url: https://api.github.com/orgs/MindFoundry
+    result: 200, public_repos = 0 (organisation still exists; every public repository has been removed)
+    checked: '2026-08-25'
+  - url: https://pypi.org/pypi/mindfoundry-optaas-client/json
+    result: 200 — client still installable, latest release 1.4.4 on 2024-01-26, no release since
+    checked: '2026-08-25'
+- name: Mind Foundry Core / Mind Foundry Platform
+  description: Self-serve machine-learning platform that exposed tools, applications and APIs.
+  status: retired
+  retired_notice_published: false
+  evidence:
+  - url: https://www.mindfoundry.ai/platform/core
+    result: 200 after redirect to https://www.mindfoundry.ai/ — soft-404; the product page no longer exists
+    checked: '2026-08-25'
+  - url: https://www.mindfoundry.ai/platform/academy
+    result: 200 — the only /platform/* page still served
+    checked: '2026-08-25'
+current_surfaces:
+- name: SENTRY
+  url: https://www.mindfoundry.ai/sentry-sensor-fusion
+  api_published: false
+- name: NIGHTINGALE
+  url: https://www.mindfoundry.ai/nightingale
+  api_published: false
+summary:
+  status_page_present: false
+  deprecation_policy_present: false
+  versioning_policy_present: false
+  retired_public_apis: 2
+  live_public_apis: 0

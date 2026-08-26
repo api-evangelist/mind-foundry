@@ -1,17 +1,37 @@
 aid: mind-foundry
 name: Mind Foundry
-description: 'Mind Foundry is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Mind Foundry is an Oxford University spin-out, founded in 2016 and headquartered at Ewert
+  House in Oxford, United Kingdom, that builds applied machine learning for high-stakes,
+  real-world problems across defence, national security, insurance, infrastructure and
+  government. Its current products are SENTRY, a multi-modal sensor-fusion capability that
+  detects, classifies and tracks objects in time and space from raw sensor data, and
+  NIGHTINGALE, AI-enabled acoustic intelligence for anti-submarine warfare that has been
+  integrated with Thales systems. Mind Foundry delivers these as deployed and integrated
+  systems for customers and prime contractors rather than as a public, self-serve developer
+  API, and it publishes no developer portal, API reference or machine-readable specification.
+  The company previously operated OPTaaS (Optimization as a Service), a Bayesian optimisation
+  API with first-party Python and R clients; the OPTaaS service hosts and its GitHub client
+  repositories are no longer reachable, and the PyPI client has had no release since
+  January 2024. Mind Foundry publishes ISO 27001, Cyber Essentials Plus and JOSCAR
+  certifications on its own site.
 url: https://raw.githubusercontent.com/api-evangelist/mind-foundry/refs/heads/main/apis.yml
+image: https://www.mindfoundry.ai/hubfs/MF%20Logo%20L.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Artificial Intelligence
+- Machine Learning
+- Defence
+- National Security
+- Sensor Fusion
+- Responsible AI
+- Optimization
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,55 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mind-foundry-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.mindfoundry.ai/
+- type: Blog
+  url: https://www.mindfoundry.ai/blog
+- type: Support
+  url: https://www.mindfoundry.ai/contactus
+- type: GitHubOrganization
+  url: https://github.com/MindFoundry
+- type: PrivacyPolicy
+  url: https://www.mindfoundry.ai/privacy-policy
+- type: Packages
+  url: packages/mind-foundry-packages.yml
+- type: Conformance
+  url: conformance/mind-foundry-conformance.yml
+- type: Compliance
+  url: conformance/mind-foundry-conformance.yml
+- type: Lifecycle
+  url: lifecycle/mind-foundry-lifecycle.yml
+- type: LLMsTxt
+  url: llms/mind-foundry-llms.txt
+- type: Plans
+  url: plans/mind-foundry-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/mind-foundry-rate-limits.yml
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 8
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Mind Foundry's site is a 139-URL HubSpot marketing site for two defence products (SENTRY,
+    NIGHTINGALE) with no developer, docs or API path in its own sitemap; the one public API it
+    ever shipped, OPTaaS, has been silently retired — mindfoundry.ai/optaas 404s, its
+    optaas.mindfoundry.ai and demo.optimize.mindfoundry.ai hosts are NXDOMAIN, and the
+    MindFoundry GitHub organisation now reports 0 public repositories.
+  evidence:
+  - url: https://www.mindfoundry.ai/sitemap.xml
+    status: 200
+  - url: https://mindfoundry.ai/optaas
+    status: 404
+  - url: https://api.github.com/orgs/MindFoundry
+    status: 200
+  - url: https://www.mindfoundry.ai/.well-known/api-catalog
+    status: 404
+  - url: https://optaas.mindfoundry.ai/
+    status: 0
+  checked: '2026-08-25'

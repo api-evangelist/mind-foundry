@@ -1,0 +1,65 @@
+generated: '2026-08-25'
+method: probed
+source: live HTTPS probes of /.well-known/* on every Mind Foundry host known to API Evangelist
+note: >-
+  Every probed path returned 404. The apex mindfoundry.ai 301-redirects to www.mindfoundry.ai,
+  which is a HubSpot CMS site that answers 404 with a themed HTML page for any unknown path.
+  No /.well-known document of any kind is served, so NO WellKnown or SecurityTxt pointer is
+  emitted in apis.yml — this file records a measured absence, not a presence.
+hosts:
+- host: www.mindfoundry.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: mindfoundry.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+  - path: /.well-known/agent.json
+    status: 301
+    file: null
+summary:
+  documents_served: 0
+  hosts_probed: 2
+  paths_probed: 16
