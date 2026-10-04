@@ -50,7 +50,7 @@ modified: '2026-08-25'
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Defence
 - National Security
 - Sensor Fusion
@@ -67,6 +67,7 @@ tags_raw:
 - Responsible AI
 - Optimization
 - United Kingdom
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
