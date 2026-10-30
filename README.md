@@ -64,21 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Mind Foundry is an Oxford University spin-out, founded in 2016 and headquartered at Ewert House in
-Oxford, United Kingdom, that builds applied machine learning for high-stakes, real-world problems
-across defence, national security, insurance, infrastructure and government. Its current products are
-SENTRY (multi-modal sensor fusion) and NIGHTINGALE (AI-enabled acoustic intelligence for
-anti-submarine warfare, integrated with Thales systems).
+Mind Foundry is an Oxford University spin-out, founded in 2016 and headquartered at Ewert House in Oxford, United Kingdom, that builds applied machine learning for high-stakes, real-world problems across defence, national security, insurance, infrastructure and government. Its current products are SENTRY, a multi-modal sensor-fusion capability that detects, classifies and tracks objects in time and space from raw sensor data, and NIGHTINGALE, AI-enabled acoustic intelligence for anti-submarine warfare that has been integrated with Thales systems. Mind Foundry delivers these as deployed and integrated systems for customers and prime contractors rather than as a public, self-serve developer API, and it publishes no developer portal, API reference or machine-readable specification. The company previously operated OPTaaS (Optimization as a Service), a Bayesian optimisation API with first-party Python and R clients; the OPTaaS service hosts and its GitHub client repositories are no longer reachable, and the PyPI client has had no release since January 2024. Mind Foundry publishes ISO 27001, Cyber Essentials Plus and JOSCAR certifications on its own site.
 
-**Mind Foundry publishes no public API.** There is no developer portal, API reference, OpenAPI /
-AsyncAPI / GraphQL specification, MCP server, A2A agent card or `/.well-known` document on any host
-it controls. The one public API it ever shipped — OPTaaS, a Bayesian optimisation web service — has
-been retired without a published notice: `optaas.mindfoundry.ai` and `demo.optimize.mindfoundry.ai`
-no longer resolve, `https://mindfoundry.ai/optaas` returns 404, and the `MindFoundry` GitHub
-organisation now reports zero public repositories. Its first-party Python client
-(`mindfoundry-optaas-client`, last released 2024-01-26) is still installable from PyPI but cannot
-reach a live server.
+**Areas:** Company · Artificial Intelligence · Machine Learning · Defence · National Security · Sensor Fusion · Responsible AI · Optimization · United Kingdom
 
-- https://www.mindfoundry.ai/
-- https://github.com/MindFoundry
-- https://pypi.org/project/mindfoundry-optaas-client/
+## Mind Foundry on APIs.io
+
+Everything profiled for Mind Foundry is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mind-foundry/](https://apis.io/providers/mind-foundry/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Mind Foundry Domain Security](https://apis.io/security/mind-foundry/mind-foundry-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Mind Foundry Plans Pricing](https://apis.io/plans/mind-foundry/mind-foundry-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Mind Foundry Rate Limits](https://apis.io/rate-limits/mind-foundry/mind-foundry-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.mindfoundry.ai/)
+- [Support](https://www.mindfoundry.ai/contactus)
+- [Blog](https://www.mindfoundry.ai/blog)
+- [Privacy policy](https://www.mindfoundry.ai/privacy-policy)
+- [GitHub](https://github.com/MindFoundry)
+
+## API Evangelist rating
+
+**Kin Score 12.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 18.4 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mind-foundry/](https://apis.io/providers/mind-foundry/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Mind Foundry: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mind-foundry/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
